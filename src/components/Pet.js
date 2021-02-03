@@ -6,11 +6,12 @@ class Pet extends React.Component {
       <div className="card">
         <div className="content">
           <a className="header">
-            
+            {this.props.pet.name}{' '}
+            {this.props.pet.gender === 'female' ? '♀' : '♂'}
             PET NAME
           </a>
           <div className="meta">
-            <span className="date">PET TYPE</span>
+            <span className="date"> </span>
           </div>
           <div className="description">
             <p>Age: PET AGE</p>
